@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia.Skia.Linux.Natives" Version="1.68.0.2" />
+		<PackageReference Include="Handlebars.Net" Version="2.1.6" />
+		<PackageReference Include="NReco.PdfGenerator.LT" Version="1.2.1" />
+		<PackageReference Include="ABCpdfStandard" Version="11.3.14" />
+		<PackageReference Include="System.Drawing.Common" Version="9.0.1" />
+		<PackageReference Include="Vicgital.Core.Logging" Version="1.0.0" />
+		<PackageReference Include="Vicgital.Core.Configuration" Version="1.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="wkhtmltopdf\linux\" />
+		<Folder Include="wkhtmltopdf\osx\" />
+		<Folder Include="wkhtmltopdf\windows\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="wkhtmltopdf\linux\wkhtmltoimage">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\linux\wkhtmltopdf">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\osx\wkhtmltoimage">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\osx\wkhtmltopdf">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\windows\wkhtmltoimage.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\windows\wkhtmltopdf.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="wkhtmltopdf\windows\wkhtmltox.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

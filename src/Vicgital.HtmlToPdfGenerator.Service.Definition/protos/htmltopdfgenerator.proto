@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Vicgital.HtmlToPdfGenerator.Service.Definition";
+
+package HtmlToPdfGenerator;
+
+// The HtmlToPdfGenerator service
+service HtmlToPdfGenerator {
+  // Sends a greeting
+  rpc ConvertHtmlToPDF (ConvertHtmlToPDFRequest) returns (stream Chunk);
+}
+
+// The request message containing the user's name.
+message ConvertHtmlToPDFRequest {
+  string bodyHtml = 1;
+  string headerHtml = 2;
+  string footerHtml = 3;
+}
+
+// The response message containing the greetings.
+message Chunk {
+  bytes data = 1;
+}

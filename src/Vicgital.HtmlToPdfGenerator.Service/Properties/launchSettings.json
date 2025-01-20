@@ -1,0 +1,14 @@
+﻿{
+    "profiles": {
+        "local": {
+            "commandName": "Project",
+            "applicationUrl": "http://localhost:50051",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "prod",
+                "FILE_STREAM_CHUNK_SIZE": "1048576",
+                "WKHTML_TO_PDF_LICENSE_KEY": "pjfsL9eBhU5mER7ULRNO/pgqeXBsJF15ea8d+vpzJ/ja8LpELgrs2FoaZwNLRmsJpgwKahfzSvyCZDHZsI0Bs9KCaby6CXo02YxpA3iiwJPaDdfO+vTK/JCsjH/d9l6118KUVjegNFAraGSKA3Q6tMTg4/injiZ9wZ3kcjoXPjs=",
+                "WKHTML_TO_PDF_LICENSE_OWNER": "DEMO"
+            }
+        }
+    }
+}
