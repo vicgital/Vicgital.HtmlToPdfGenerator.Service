@@ -60,3 +60,4 @@ stages:
         dockerfile: '$(Build.ArtifactStagingDirectory)/Output/Dockerfile'
         tags: |
           $(tag)
+          latest

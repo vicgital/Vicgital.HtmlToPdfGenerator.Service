@@ -15,6 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vicgital.HtmlToPdfGenerator
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{EFD3A9AB-CAFD-476B-8404-FF58CDC802F5}"
 	ProjectSection(SolutionItems) = preProject
+		build-push-docker-image.yml = build-push-docker-image.yml
 		Dockerfile = Dockerfile
 		nuget.config = nuget.config
 	EndProjectSection
