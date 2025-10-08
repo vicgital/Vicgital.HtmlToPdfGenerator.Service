@@ -24,8 +24,12 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
+      - name: Set up NuGet authentication for Azure Artifacts
+        run: |
+          echo "NUGET_AUTH_TOKEN=${{ secrets.AZURE_DEVOPS_PAT }}" >> $GITHUB_ENV
+
       - name: Restore dependencies
-        run: dotnet restore ./src/${{ env.PROJECT_NAME }}/${{ env.PROJECT_NAME }}.csproj
+        run: dotnet restore ./src/${{ env.PROJECT_NAME }}/${{ env.PROJECT_NAME }}.csproj --configfile nuget.config
 
       - name: Publish .NET project
         run: dotnet publish ./src/${{ env.PROJECT_NAME }}/${{ env.PROJECT_NAME }}.csproj --configuration ${{ env.BUILD_CONFIGURATION }} --output ./output
