@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11104.47 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0188265F-29EB-4A1C-8945-54A28EC67CEE}"
 EndProject
@@ -15,6 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vicgital.HtmlToPdfGenerator
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{EFD3A9AB-CAFD-476B-8404-FF58CDC802F5}"
 	ProjectSection(SolutionItems) = preProject
+		build-push-docker-image.yml = build-push-docker-image.yml
 		Dockerfile = Dockerfile
 		nuget.config = nuget.config
 	EndProjectSection
@@ -45,5 +46,8 @@ Global
 		{6BEECB34-6C74-4159-BC98-AAB4BF976438} = {0188265F-29EB-4A1C-8945-54A28EC67CEE}
 		{BEE773E1-EA93-4B20-9B8B-71B4BBAB64D8} = {0188265F-29EB-4A1C-8945-54A28EC67CEE}
 		{70658D79-6F07-4E96-AEA4-E362F22B3576} = {0188265F-29EB-4A1C-8945-54A28EC67CEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AA31C49-FD9C-48D4-A80C-079472510E63}
 	EndGlobalSection
 EndGlobal
